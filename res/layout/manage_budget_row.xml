@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	android:orientation="horizontal"
+>
+
+	<TextView
+		android:id="@+id/manage_budget_row_name"
+		android:layout_width="@dimen/budget_list_width"
+		android:layout_height="fill_parent"
+		android:gravity="left|center_vertical"
+		android:textSize="16sp"
+		android:layout_marginLeft="5dip"
+	></TextView>
+	<TextView
+		android:id="@+id/budget_price"
+		android:layout_width="wrap_content"
+		android:layout_height="fill_parent"
+		android:gravity="right|center_vertical"
+		android:textSize="16sp"
+		android:layout_weight="1"
+	>
+	</TextView>
+	<!-- 全体予算設定ボタン  -->
+	<ImageButton
+		android:id="@+id/setting_budget"
+		android:layout_width="45dip"
+		android:layout_height="wrap_content"
+		android:background="@drawable/setting_button_stateful"
+		android:layout_marginLeft="5dip"
+		android:layout_marginRight="5dip"
+		android:layout_marginTop="7sp"
+		android:layout_marginBottom="6sp"
+	></ImageButton>
+</LinearLayout>

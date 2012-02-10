@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	android:orientation="vertical"
+>
+
+	<LinearLayout
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:orientation="vertical"
+		android:layout_marginBottom="75dip"
+	>
+		<!-- 「カテゴリの編集タイトル」 -->
+		<TextView
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:text="@string/edit_category_title"
+			android:drawableLeft="@drawable/tag_blue_mini"
+			style="@style/ScreenTitle"
+		>
+		</TextView>
+		<include
+			layout="@layout/title_bottom_divider" />
+
+		<!--	追加ボタン -->
+		<Button
+			android:text="@string/ADD_CATEGORY"
+			android:id="@+id/add_category"
+			android:layout_width="wrap_content"
+			android:layout_height="47sp"
+			android:drawableLeft="@drawable/add"
+			android:layout_gravity="right"
+			android:gravity="center"
+			android:layout_marginTop="5sp"
+			android:layout_marginBottom="5sp"
+		></Button>
+
+		<!--カテゴリレコード一覧 -->
+		<ImageView
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:src="@android:drawable/divider_horizontal_bright"
+			android:scaleType="fitXY"
+			android:gravity="fill_horizontal"
+		></ImageView>
+		<ListView
+			android:id="@+id/category_name_list"
+			android:layout_width="fill_parent"
+			android:choiceMode="singleChoice"
+			android:layout_height="wrap_content"
+			android:clickable="true"
+		></ListView>
+		<ImageView
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:src="@android:drawable/divider_horizontal_bright"
+			android:scaleType="fitXY"
+			android:gravity="fill_horizontal"
+		></ImageView>
+	</LinearLayout>
+	<include layout="@layout/admob"/>
+
+</FrameLayout>

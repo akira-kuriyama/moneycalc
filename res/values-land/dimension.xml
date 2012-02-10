@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources>
+	<dimen name="budget_list_width">250dip</dimen>
+	<dimen name="backup_restore_select_action_button_height">10dip</dimen>
+
+</resources>

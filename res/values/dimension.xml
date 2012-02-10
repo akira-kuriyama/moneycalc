@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources>
+	<dimen name="register_height_distance">10dip</dimen>
+	<dimen name="register_height_distance_for_diesire">0dip</dimen>
+	<dimen name="register_height_distance_for_qvga">5sp</dimen>
+	<dimen name="disp_register_date_and_time_size">12sp</dimen>
+	<dimen name="incame_expense_name_text_size">18sp</dimen>
+	<dimen name="operand_name_text_size">25sp</dimen>
+	<dimen name="price_value_text_size">25sp</dimen>
+	<dimen name="budget_list_width">150dip</dimen>
+	<dimen name="backup_restore_select_action_button_height">20dip</dimen>
+	<dimen name="footer_icon_drawable_padding">7sp</dimen>
+</resources>

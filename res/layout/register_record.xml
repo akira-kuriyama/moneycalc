@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+>
+
+	<LinearLayout
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:orientation="vertical"
+		android:layout_weight="1"
+	>
+		<!-- タイトル -->
+		<TextView
+			android:id="@+id/this_month_text"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:drawableLeft="@drawable/add_to_shopping_cart_mini"
+			style="@style/ScreenTitle"
+		>
+		</TextView>
+		<include
+			layout="@layout/title_bottom_divider" />
+
+		<!-- レコード登録UI -->
+		<LinearLayout
+			android:layout_width="fill_parent"
+			android:layout_height="fill_parent"
+			android:orientation="vertical"
+			android:paddingLeft="5sp"
+			android:paddingRight="5sp"
+		>
+			<LinearLayout
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:orientation="horizontal"
+				android:layout_marginBottom="@dimen/register_height_distance_for_qvga"
+				android:layout_marginTop="@dimen/register_height_distance_for_diesire"
+			>
+
+				<!-- 金額テキスト  -->
+				<TextView
+					android:layout_width="90sp"
+					android:layout_height="wrap_content"
+					android:text="@string/register_record_price"
+					android:layout_gravity="center_vertical"
+				>
+				</TextView>
+
+				<LinearLayout
+					android:layout_width="fill_parent"
+					android:layout_height="wrap_content"
+					android:orientation="vertical"
+				>
+					<LinearLayout
+						android:layout_width="fill_parent"
+						android:layout_height="wrap_content"
+						android:orientation="horizontal"
+					>
+						<TextView
+							android:id="@+id/incame_expense_name"
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							android:textSize="@dimen/incame_expense_name_text_size"
+							android:layout_marginBottom="1sp"
+							android:layout_gravity="left|bottom"
+						>
+						</TextView>
+						<TextView
+							android:id="@+id/operand_name"
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							android:layout_marginBottom="1sp"
+							android:gravity="right"
+							android:textSize="@dimen/operand_name_text_size"
+							android:layout_weight="1"
+							android:layout_marginRight="10dip"
+						>
+						</TextView>
+						<!-- 金額テキスト  -->
+						<TextView
+							android:id="@+id/price_value"
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							android:textSize="@dimen/price_value_text_size"
+							android:gravity="right"
+						></TextView>
+					</LinearLayout>
+					<TextView
+						android:layout_width="fill_parent"
+						android:layout_height="1sp"
+						android:gravity="right"
+						android:background="#000b00"
+
+					></TextView>
+				</LinearLayout>
+			</LinearLayout>
+			<LinearLayout
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:orientation="horizontal"
+				android:layout_marginTop="@dimen/register_height_distance"
+			>
+				<!-- カテゴリスピナー  -->
+				<TextView
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:text="@string/register_record_category"
+				>
+				</TextView>
+				<Spinner
+					android:id="@+id/category_spinner"
+					android:layout_width="fill_parent"
+					android:layout_height="wrap_content"
+					android:drawSelectorOnTop="true"
+				>
+				</Spinner>
+			</LinearLayout>
+			<LinearLayout
+				android:id="@+id/memo_erea"
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:orientation="horizontal"
+				android:layout_marginTop="@dimen/register_height_distance"
+			>
+				<!-- メモ  -->
+				<TextView
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:text="@string/register_record_memo"
+				>
+				</TextView>
+				<EditText
+					android:id="@+id/memo_value"
+					android:layout_width="fill_parent"
+					android:layout_height="wrap_content"
+					android:maxLines="3"
+					android:lines="2"
+					android:gravity="top"
+				>
+				</EditText>
+			</LinearLayout>
+			<LinearLayout
+				android:id="@+id/register_date_erea"
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:orientation="horizontal"
+				android:layout_marginTop="@dimen/register_height_distance_for_diesire"
+			>
+				<TextView
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:text="@string/register_record_purchase_date"
+				>
+				</TextView>
+				<TextView
+					android:id="@+id/disp_register_date_and_time"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_weight="1"
+				>
+				</TextView>
+				<Button
+					android:text="@string/register_record_purchase_date_edit_button"
+					android:id="@+id/edit_register_date"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+				></Button>
+			</LinearLayout>
+		</LinearLayout>
+
+	</LinearLayout>
+
+
+	<LinearLayout
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:orientation="vertical"
+		android:layout_gravity="bottom"
+	>
+		<include layout="@layout/register_record_add_button_around"/>
+		<!-- キーボード  -->
+		<LinearLayout
+			android:id="@+id/keyboard"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:orientation="vertical"
+			android:gravity="center_horizontal"
+			android:layout_gravity="bottom|center_horizontal"
+		>
+			<TextView
+				android:layout_width="fill_parent"
+				android:layout_height="1px"
+				android:background="#7c7eea"
+				android:layout_marginBottom="3sp"
+			></TextView>
+			<include layout="@layout/register_keyboard"/>
+		</LinearLayout>
+
+
+		<!-- フッター -->
+		<include
+			layout="@layout/footer" />
+
+	</LinearLayout>
+
+</FrameLayout>

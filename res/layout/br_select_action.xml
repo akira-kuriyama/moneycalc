@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent"
+	android:layout_height="wrap_content"
+	android:orientation="vertical"
+>
+	<!-- タイトル -->
+	<TextView
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:text="@string/backup_restore_title"
+		android:drawableLeft="@drawable/office_folders"
+		style="@style/ScreenTitle"
+	>
+	</TextView>
+	<include
+		layout="@layout/title_bottom_divider" />
+
+	<TextView
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:text="@string/backup_restore_select_action_title_msg"
+	>
+	</TextView>
+
+	<TableLayout
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:layout_marginTop="15dip"
+	>
+		<TableRow>
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="@string/backup_restore_select_action_no_1_msg"
+			>
+			</TextView>
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_weight="1"
+				android:text="@string/backup_restore_select_action_1_msg"
+			>
+			</TextView>
+		</TableRow>
+		<TableRow>
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="@string/backup_restore_select_action_no_2_msg"
+			>
+			</TextView>
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_weight="1"
+				android:text="@string/backup_restore_select_action_2_msg"
+			>
+			</TextView>
+		</TableRow>
+	</TableLayout>
+	<LinearLayout
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:orientation="vertical"
+		android:paddingLeft="10dip"
+		android:paddingRight="10dip"
+	>
+		<Button
+			android:id="@+id/backup_select_button"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:text="@string/backup_select_button_text"
+			android:layout_marginTop="@dimen/backup_restore_select_action_button_height"
+		>
+		</Button>
+		<Button
+			android:id="@+id/restore_select_button"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:text="@string/restore_select_button_text"
+			android:layout_marginTop="@dimen/backup_restore_select_action_button_height"
+			android:layout_marginBottom="5dip"
+		>
+		</Button>
+		<Button
+			android:id="@+id/backup_delete_select_button"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:text="@string/backup_delete_select_button_text"
+			android:layout_marginTop="@dimen/backup_restore_select_action_button_height"
+		>
+		</Button>
+
+	</LinearLayout>
+
+</LinearLayout>

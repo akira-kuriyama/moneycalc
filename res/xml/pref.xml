@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+	xmlns:android="http://schemas.android.com/apk/res/android"
+>
+	<PreferenceCategory
+		android:title="@string/pref_settings_title_start"
+	>
+		<CheckBoxPreference
+			android:key="is_disp_status_bar"
+			android:defaultValue="false"
+			android:title="@string/pref_notification_bar"
+			android:summary="@string/pref_is_disp_notification_bar" />
+	</PreferenceCategory>
+
+	<PreferenceCategory
+		android:title="@string/pref_settings_title_register"
+	>
+		<CheckBoxPreference
+			android:key="is_move_day_list_after_registered"
+			android:defaultValue="false"
+			android:title="@string/pref_register_after_action"
+			android:summary="@string/pref_is_move_day_list_after_register" />
+	</PreferenceCategory>
+
+
+	<PreferenceCategory
+		android:title="@string/pref_settings_title_list"
+	>
+
+		<com.marronst.moneycalc.preference.BalancePreference
+			android:key="balance_calculation_method"
+			android:title="@string/pref_title_balance_calculation_method"/>
+			
+		<CheckBoxPreference
+			android:key="is_use_carryover"
+			android:defaultValue="true"
+			android:title="@string/pref_month_carryover"
+			android:summary="@string/pref_is_month_carryover" />
+
+		<CheckBoxPreference
+			android:key="is_use_category_carryover"
+			android:defaultValue="false"
+			android:title="@string/pref_category_carryover"
+			android:summary="@string/pref_is_category_carryover" />
+
+
+		<ListPreference
+			android:key="first_day_of_weeks"
+			android:title="@string/pref_first_day_of_week"
+			android:dialogTitle="@string/pref_is_first_day_of_week"
+			android:defaultValue="monday"
+			android:entries="@array/first_day_of_weeks_entries"
+			android:entryValues="@array/first_day_of_weeks_entry_values" />
+
+
+		<ListPreference
+			android:key="first_day_of_month"
+			android:title="@string/pref_first_day_of_month"
+			android:dialogTitle="@string/pref_is_first_day_of_month"
+			android:defaultValue="1"
+			android:entries="@array/first_day_of_month_entries"
+			android:entryValues="@array/first_day_of_month_entries" />
+	</PreferenceCategory>
+
+	<PreferenceCategory
+		android:title="@string/pref_settings_title_other"
+	>
+		<com.marronst.moneycalc.preference.CurrencyUnitPreference
+			android:title="@string/pref_currency_unit_title" />
+		<com.marronst.moneycalc.preference.AboutDialogPreference
+			android:title="about..." />
+		<Preference
+			android:key="send_log"
+			android:title="@string/pref_send_log" />
+	</PreferenceCategory>
+
+</PreferenceScreen>

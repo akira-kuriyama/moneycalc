@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	android:orientation="vertical"
+>
+	<!-- タイトル -->
+	<TextView
+		android:id="@+id/kakeibo_total_title"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:text="１ヶ月の合計"
+		android:drawableLeft="@drawable/promotion_mini"
+		style="@style/ScreenTitle"
+	>
+	</TextView>
+	<include
+		layout="@layout/title_bottom_divider" />
+	<LinearLayout
+		android:layout_width="fill_parent"
+		android:layout_height="fill_parent"
+		android:orientation="horizontal"
+	>
+
+		<LinearLayout
+			android:id="@+id/total_tally_progress_bar_area"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:orientation="horizontal"
+			android:gravity="center_horizontal"
+			android:layout_marginTop="20dip"
+			android:layout_marginLeft="20dip"
+		>
+			<ProgressBar
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				style="?android:attr/progressBarStyleSmall"
+			>
+			</ProgressBar>
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="30dip"
+				android:text="@string/calculate_msg"
+				android:gravity="top"
+				android:layout_marginLeft="10dip"
+			></TextView>
+
+		</LinearLayout>
+		<!-- リスト -->
+		<ListView
+			android:id="@+id/kakeibo_total_list"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:choiceMode="singleChoice"
+			android:clickable="true"
+			android:layout_gravity="top"
+			android:layout_weight="1"
+			android:scrollbarStyle="outsideInset"
+		></ListView>
+
+		<LinearLayout
+			android:layout_width="wrap_content"
+			android:layout_height="fill_parent"
+			android:orientation="vertical"
+		>
+			<Button
+				android:id="@+id/previous"
+				android:layout_height="wrap_content"
+				android:layout_width="wrap_content"
+				android:layout_weight="1"
+				android:layout_gravity="center"
+				android:drawableTop="@drawable/back"
+				android:gravity="center"
+			></Button>
+			<Button
+				android:id="@+id/next"
+				android:layout_height="wrap_content"
+				android:layout_width="wrap_content"
+				android:layout_weight="1"
+				android:layout_gravity="center"
+				android:drawableBottom="@drawable/next"
+				android:gravity="center"
+			></Button>
+		</LinearLayout>
+
+		<!-- フッター -->
+		<include
+			layout="@layout/footer" />
+	</LinearLayout>
+</LinearLayout>

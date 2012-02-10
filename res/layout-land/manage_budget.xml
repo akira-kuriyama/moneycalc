@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	android:orientation="vertical"
+>
+	<!-- 「タイトル」 -->
+	<TextView
+		android:id="@+id/manage_budget_title"
+		android:text="@string/manage_budget_title"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:drawableLeft="@drawable/yen_currency_sign_mini"
+		style="@style/ScreenTitle"
+	>
+	</TextView>
+	<include
+		layout="@layout/title_bottom_divider" />
+
+	<!-- カテゴリ登録UI -->
+	<LinearLayout
+		android:layout_width="fill_parent"
+		android:layout_height="fill_parent"
+		android:orientation="horizontal"
+
+	>
+		<LinearLayout
+			android:layout_width="wrap_content"
+			android:layout_height="fill_parent"
+			android:orientation="vertical"
+			android:layout_weight="1"
+
+		>
+			<!-- カテゴリレコード一覧 -->
+			<ListView
+				android:id="@+id/budget_list"
+				android:layout_width="fill_parent"
+				android:layout_height="150dip"
+				android:choiceMode="singleChoice"
+				android:layout_weight="1"
+			></ListView>
+			<ImageView
+				android:layout_width="fill_parent"
+				android:layout_height="1sp"
+				android:src="@android:drawable/divider_horizontal_bright"
+				android:scaleType="fitXY"
+				android:gravity="fill_horizontal"
+			></ImageView>
+			<Button
+				android:id="@+id/copy_previous_month_budget_setting"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_gravity="right"
+				android:text="@string/prev_month_same_budget_setting"
+				android:layout_marginTop="3dip"
+			></Button>
+
+		</LinearLayout>
+		<!-- カテゴリレコード一覧 -->
+		<LinearLayout
+			android:layout_width="wrap_content"
+			android:layout_height="fill_parent"
+			android:orientation="vertical"
+			android:gravity="center"
+		>
+
+			<Button
+				android:id="@+id/previous_month"
+				android:layout_height="wrap_content"
+				android:layout_width="wrap_content"
+				android:layout_weight="1"
+				android:drawableTop="@drawable/back"
+				android:layout_gravity="center"
+			></Button>
+
+			<Button
+				android:id="@+id/next_month"
+				android:layout_height="wrap_content"
+				android:layout_width="wrap_content"
+				android:layout_weight="1"
+				android:drawableBottom="@drawable/next"
+				android:layout_gravity="center"
+			></Button>
+		</LinearLayout>
+	</LinearLayout>
+
+</LinearLayout>
+		

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources>
+	<dimen name="register_height_distance">5dip</dimen>
+	<dimen name="register_height_distance_for_diesire">0dip</dimen>
+	<dimen name="footer_icon_drawable_padding">0sp</dimen>
+</resources>

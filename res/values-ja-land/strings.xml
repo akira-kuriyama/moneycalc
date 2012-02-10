@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	
+	<string name="backup_delete_select_button_text">バックアップしたデータを削除(整理)する場合はこちら</string>
+
+</resources>

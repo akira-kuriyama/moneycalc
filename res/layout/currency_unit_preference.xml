@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent"
+	android:layout_height="wrap_content"
+	android:orientation="vertical"
+	android:paddingLeft="10dip"
+	android:paddingRight="10dip"
+	android:paddingTop="10dip"
+>
+	<ScrollView
+		android:layout_width="fill_parent"
+		android:layout_height="fill_parent"
+	>
+
+		<LinearLayout
+			android:layout_width="fill_parent"
+			android:layout_height="fill_parent"
+			android:orientation="vertical"
+		>
+			<TextView
+				style="@style/LightDialogText"
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:text="@string/pref_select_currency_unit_msg"
+			></TextView>
+			<Spinner
+				android:id="@+id/currency_unit_spinner"
+				android:layout_width="150dip"
+				android:layout_height="wrap_content"
+			>
+			</Spinner>
+			<TextView
+				android:id="@+id/currency_unit_edit_text_title"
+				style="@style/LightDialogText"
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:text="@string/pref_input_currency_unit_msg"
+			></TextView>
+			<EditText
+				android:id="@+id/currency_unit_edit_text"
+				android:layout_width="75dip"
+				android:layout_height="wrap_content"
+				android:maxLength="3"
+				android:inputType="text"
+			></EditText>
+			<TextView
+				style="@style/LightDialogText"
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:text="@string/pref_select_currency_unit_position_msg"
+			></TextView>
+			<Spinner
+				android:id="@+id/currency_unit_position_spinner"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+			>
+			</Spinner>
+		</LinearLayout>
+	</ScrollView>
+</LinearLayout>

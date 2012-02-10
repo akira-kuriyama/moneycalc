@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	android:orientation="horizontal"
+>
+	<TextView
+		xmlns:android="http://schemas.android.com/apk/res/android"
+		android:id="@+id/manage_filter_row_filter_name"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:gravity="center_vertical"
+		android:textSize="10pt"
+		android:padding="5dip"
+	></TextView>
+</LinearLayout>

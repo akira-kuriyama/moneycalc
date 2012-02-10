@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	
+	<style name="how_to_export_radio_orientation">
+		<item name="android:orientation">horizontal</item>
+	</style>
+	
+	<style name="export_specified_period_area">
+		<item name="android:orientation">horizontal</item>
+	</style>
+</resources>

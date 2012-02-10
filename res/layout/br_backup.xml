@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent"
+	android:layout_height="wrap_content"
+	android:orientation="vertical"
+>
+	<!-- タイトル -->
+	<TextView
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:text="@string/backup_restore_title"
+		android:drawableLeft="@drawable/office_folders"
+		style="@style/ScreenTitle"
+	>
+	</TextView>
+	<include
+		layout="@layout/title_bottom_divider" />
+
+	<TextView
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:gravity="center"
+		android:layout_marginTop="15dip"
+		android:text="@string/backup_restore_backup_msg"
+	>
+	</TextView>
+	
+	<TextView
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:layout_marginTop="10dip"
+		android:text="@string/backup_restore_backup_notice_msg"
+	>
+	</TextView>
+
+	<Button
+		android:id="@+id/do_backup_button"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:text="@string/do_backup_button_text"
+		android:layout_marginTop="20dip"
+		android:layout_marginLeft="10dip"
+		android:layout_marginRight="10dip"
+	>
+	</Button>
+
+
+</LinearLayout>

@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	android:orientation="vertical"
+>
+
+	<LinearLayout
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:orientation="vertical"
+		android:layout_marginBottom="105dip"
+
+	>
+		<TextView
+			android:id="@+id/manage_budget_title"
+			android:text="@string/manage_budget_title"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:drawableLeft="@drawable/yen_currency_sign_mini"
+			style="@style/ScreenTitle"
+		>
+		</TextView>
+		<include
+			layout="@layout/title_bottom_divider" />
+
+
+		<!-- カテゴリレコード一覧 -->
+		<ListView
+			android:id="@+id/budget_list"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:choiceMode="singleChoice"
+		></ListView>
+		<ImageView
+			android:layout_width="fill_parent"
+			android:layout_height="1sp"
+			android:src="@android:drawable/divider_horizontal_bright"
+			android:scaleType="fitXY"
+			android:gravity="fill_horizontal"
+		></ImageView>
+
+	</LinearLayout>
+
+	<!-- カテゴリレコード一覧 -->
+	<LinearLayout
+		android:layout_width="fill_parent"
+		android:layout_height="fill_parent"
+		android:orientation="vertical"
+		android:gravity="bottom"
+	>
+		<LinearLayout
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:orientation="horizontal"
+			android:gravity="right|center_vertical"
+		>
+			<Button
+				android:id="@+id/copy_previous_month_budget_setting"
+				android:minWidth="250dip"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:gravity="center"
+				android:text="@string/prev_month_same_budget_setting"
+				android:layout_marginTop="3dip"
+			></Button>
+		</LinearLayout>
+		<LinearLayout
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:orientation="horizontal"
+		>
+			<Button
+				android:id="@+id/previous_month"
+				android:layout_height="wrap_content"
+				android:layout_width="wrap_content"
+				android:layout_weight="1"
+				android:drawableLeft="@drawable/back"
+				android:layout_gravity="center|bottom"
+				android:layout_marginRight="1dip"
+			></Button>
+
+			<Button
+				android:id="@+id/next_month"
+				android:layout_height="wrap_content"
+				android:layout_width="wrap_content"
+				android:layout_weight="1"
+				android:drawableRight="@drawable/next"
+				android:layout_gravity="center|bottom"
+				android:layout_marginLeft="1sp"
+			></Button>
+		</LinearLayout>
+	</LinearLayout>
+
+</FrameLayout>
+		

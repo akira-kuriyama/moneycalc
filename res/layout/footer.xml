@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent"
+	android:layout_height="wrap_content"
+	android:orientation="vertical"
+	android:layout_gravity="bottom"
+>
+	<TextView
+		android:layout_width="fill_parent"
+		android:layout_height="1px"
+		android:background="#f08300"
+	></TextView>
+
+	<LinearLayout
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:orientation="horizontal"
+		android:paddingTop="5sp"
+		android:background="#e9dfe5"
+		android:gravity="center_horizontal|bottom"
+	>
+		<!-- 書き込みボタン -->
+		<Button
+			android:id="@+id/show_register_view"
+			android:text="@string/REGISTER_DISPLAY_NAME"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:drawableLeft="@drawable/mini_add"
+			android:drawablePadding="@dimen/footer_icon_drawable_padding"
+			android:textSize="12sp"
+			android:gravity="center"
+			android:layout_weight="1"
+
+		></Button>
+		<!-- 今月ボタン -->
+		<Button
+			android:id="@+id/current_month"
+			android:text="@string/CURRENT_MONTH"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:drawableLeft="@drawable/mini_calendar_month"
+			android:drawablePadding="@dimen/footer_icon_drawable_padding"
+			android:textSize="12sp"
+			android:gravity="center"
+			android:layout_weight="1"
+		></Button>
+		<!-- 今週ボタン  -->
+		<Button
+			android:id="@+id/current_week"
+			android:text="@string/CURRENT_WEEK"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:drawableLeft="@drawable/mini_calendar_week"
+			android:drawablePadding="@dimen/footer_icon_drawable_padding"
+			android:textSize="12sp"
+			android:gravity="center"
+			android:layout_weight="1"
+		></Button>
+		<!-- 今日ボタン  -->
+		<Button
+			android:id="@+id/current_day"
+			android:text="@string/CURRENT_DAY"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:drawableLeft="@drawable/mini_calendar_day"
+			android:drawablePadding="@dimen/footer_icon_drawable_padding"
+			android:textSize="12sp"
+			android:gravity="center"
+			android:layout_weight="1"
+		></Button>
+	</LinearLayout>
+</LinearLayout>

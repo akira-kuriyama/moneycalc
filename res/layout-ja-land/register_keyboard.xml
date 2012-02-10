@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+	xmlns:android="http://schemas.android.com/apk/res/android"
+>
+	<TableLayout
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:gravity="center"
+		android:layout_gravity="center"
+	>
+		<TableRow
+			android:gravity="center_horizontal"
+			android:layout_marginBottom="3dip"
+		>
+			<Button
+				android:id="@+id/key_7"
+				android:text="7"
+				android:layout_width="60dip"
+
+			></Button>
+			<Button
+				android:id="@+id/key_8"
+				android:text="8"
+				android:layout_width="60dip"
+
+			></Button>
+			<Button
+				android:id="@+id/key_9"
+				android:text="9"
+				android:layout_width="60dip"
+
+			></Button>
+			<Button
+				android:id="@+id/key_back"
+				android:text="back"
+				android:layout_width="60dip"
+				android:textColor="@color/BACK_BUTTON"
+
+			></Button>
+		</TableRow>
+		<TableRow
+			android:gravity="center_horizontal"
+			android:layout_marginBottom="3dip"
+		>
+			<Button
+				android:id="@+id/key_4"
+				android:text="4"
+			></Button>
+			<Button
+				android:id="@+id/key_5"
+				android:text="5"
+			></Button>
+			<Button
+				android:id="@+id/key_6"
+				android:text="6"
+			></Button>
+			<Button
+				android:id="@+id/key_minus"
+				android:text=" 一 "
+				android:textSize="9sp"
+				android:layout_height="fill_parent"
+				android:textColor="@color/OPERAND"
+
+			></Button>
+		</TableRow>
+		<TableRow
+			android:gravity="center_horizontal"
+			android:layout_marginBottom="3dip"
+		>
+			<Button
+				android:id="@+id/key_1"
+				android:text="1"
+			></Button>
+			<Button
+				android:id="@+id/key_2"
+				android:text="2"
+			></Button>
+			<Button
+				android:id="@+id/key_3"
+				android:text="3"
+			></Button>
+			<Button
+				android:id="@+id/key_plus"
+				android:text="＋"
+				android:textColor="@color/OPERAND"
+			></Button>
+		</TableRow>
+		<TableRow
+			android:gravity="center_horizontal"
+			android:layout_marginBottom="3dip"
+		>
+			<Button
+				android:id="@+id/key_clear"
+				android:text="C"
+				android:textColor="@color/RED"
+			></Button>
+			<Button
+				android:id="@+id/key_0"
+				android:text="0"
+				android:layout_span="2"
+			></Button>
+			<Button
+				android:id="@+id/key_equal"
+				android:text="="
+				android:textColor="@color/OPERAND"
+			></Button>
+		</TableRow>
+	</TableLayout>
+</merge>

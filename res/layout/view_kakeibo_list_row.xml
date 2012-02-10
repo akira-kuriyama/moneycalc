@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent"
+	android:layout_height="wrap_content"
+	android:orientation="vertical"
+	android:paddingRight="6dip"
+	android:paddingLeft="6dip"
+	android:paddingTop="4dip"
+	android:paddingBottom="4dip"
+>
+	<LinearLayout
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:orientation="horizontal"
+	>
+
+		<TextView
+			android:id="@+id/row_title"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:textSize="16sp"
+			android:gravity="left|center_vertical"
+			android:textColor="@color/BLACK"
+			android:layout_weight="1"
+		></TextView>
+		<LinearLayout
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:orientation="vertical"
+		>
+			<LinearLayout
+				android:id="@+id/expense_area"
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:orientation="horizontal"
+			>
+				<TextView
+					android:id="@+id/expense_label"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:textSize="16sp"
+					android:gravity="center_vertical"
+					android:text="  "
+					android:layout_weight="1"
+				></TextView>
+				<TextView
+					android:id="@+id/expense_price"
+					android:layout_width="110dip"
+					android:layout_height="wrap_content"
+					android:textSize="18sp"
+					android:gravity="right"
+				></TextView>
+
+			</LinearLayout>
+
+			<LinearLayout
+				android:id="@+id/income_area"
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:orientation="horizontal"
+			>
+				<TextView
+					android:id="@+id/income_label"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:textSize="16sp"
+					android:gravity="center_vertical"
+					android:text="@string/income_label"
+					android:layout_weight="1"
+				></TextView>
+				<TextView
+					android:id="@+id/income_price"
+					android:layout_width="110dip"
+					android:layout_height="wrap_content"
+					android:textSize="18sp"
+					android:gravity="right"
+				></TextView>
+			</LinearLayout>
+		</LinearLayout>
+	</LinearLayout>
+
+	<LinearLayout
+		android:id="@+id/memo_register_date_area"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:orientation="horizontal"
+	>
+		<TextView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:textSize="16sp"
+			android:text="　"
+		></TextView>
+		<TextView
+			android:id="@+id/memo"
+			android:gravity="left"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_weight="1"
+		></TextView>
+		<TextView
+			android:id="@+id/registerDate"
+			android:layout_width="wrap_content"
+			android:layout_height="fill_parent"
+			android:gravity="bottom"
+		></TextView>
+	</LinearLayout>
+</LinearLayout>
+

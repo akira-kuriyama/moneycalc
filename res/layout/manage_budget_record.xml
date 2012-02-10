@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+	android:id="@+id/layout_root"
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	android:orientation="vertical"
+	android:paddingLeft="5dip"
+	android:paddingRight="5dip"
+>
+
+	<LinearLayout
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:orientation="horizontal"
+	>
+		<TextView
+			style="@style/LightDialogText"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="@string/manage_budget_budget"
+		>
+		</TextView>
+		<!-- カテゴリへの予算入力テキストボックス  -->
+		<TextView
+			android:id="@+id/currency_unit_front"
+			style="@style/LightDialogText"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_marginLeft="10dip"
+		>
+		</TextView>
+		<EditText
+			android:id="@+id/input_value"
+			android:layout_width="140dip"
+			android:layout_height="wrap_content"
+			android:focusable="true"
+			android:inputType="numberDecimal"
+			android:gravity="right"
+			android:layout_weight="1"
+		>
+		</EditText>
+		<TextView
+			android:id="@+id/currency_unit_back"
+			style="@style/LightDialogText"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_marginLeft="10dip"
+		>
+		</TextView>
+	</LinearLayout>
+
+	<LinearLayout
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:orientation="horizontal"
+		android:layout_marginTop="10dip"
+	>
+		<TextView
+			style="@style/LightDialogText"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="@string/manage_budget_prev_month"
+			android:layout_gravity="center_vertical"
+		>
+		</TextView>
+		<TextView
+			style="@style/LightDialogText"
+			android:id="@+id/previous_month_budget_price"
+			android:layout_width="160dip"
+			android:layout_height="wrap_content"
+			android:gravity="right"
+			android:layout_weight="1"
+			android:textSize="16sp"
+		>
+		</TextView>
+	</LinearLayout>
+	<LinearLayout
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:orientation="horizontal"
+		android:gravity="right"
+	>
+		<Button
+			android:id="@+id/copy_previous_budget_price"
+			android:layout_width="200dip"
+			android:layout_height="wrap_content"
+			android:text="@string/prev_month_same_budget_setting"
+			android:layout_marginTop="7dip"
+			android:gravity="right|center_vertical"
+		>
+
+		</Button>
+	</LinearLayout>
+
+
+	<LinearLayout
+		android:id="@+id/one_month_budget_setting_area_1"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:orientation="horizontal"
+		android:layout_marginTop="10dip"
+	>
+		<TextView
+			style="@style/LightDialogText"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="@string/manage_budget_category_total_budget"
+			android:layout_gravity="center_vertical"
+		>
+		</TextView>
+		<TextView
+			style="@style/LightDialogText"
+			android:id="@+id/kakeibo_total_budget_price"
+			android:layout_width="160dip"
+			android:layout_height="wrap_content"
+			android:gravity="right"
+			android:layout_weight="1"
+			android:textSize="16sp"
+		>
+		</TextView>
+	</LinearLayout>
+	<LinearLayout
+		android:id="@+id/one_month_budget_setting_area_2"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:orientation="horizontal"
+		android:gravity="right"
+	>
+		<Button
+			android:id="@+id/copy_kakeibo_total_budget_price"
+			android:layout_width="200dip"
+			android:layout_height="wrap_content"
+			android:text="@string/manage_budget_same_category_total_budget"
+			android:layout_marginTop="7dip"
+			android:gravity="right|center_vertical"
+		>
+
+		</Button>
+	</LinearLayout>
+
+</LinearLayout>

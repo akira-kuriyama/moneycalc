@@ -1,0 +1,233 @@
+package com.marronst.moneycalc.db;
+
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.Comparator;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+import java.util.Map.Entry;
+
+import android.content.ContentValues;
+import android.database.Cursor;
+import android.database.sqlite.SQLiteDatabase;
+
+import com.marronst.moneycalc.dxo.BudgetDxo;
+import com.marronst.moneycalc.entity.Budget;
+import com.marronst.moneycalc.entity.Budget.CnBudget;
+import com.marronst.moneycalc.entity.Budget.IdxBudget;
+import com.marronst.moneycalc.entity.Budget.TnBudget;
+import com.marronst.moneycalc.entity.Category.CnCategory;
+import com.marronst.moneycalc.entity.Category.TnCategory;
+import com.marronst.moneycalc.utils.KakeiboUtils;
+
+/** 予算Dao  */
+public class BudgetDao {
+
+	private SQLiteDatabase db;
+
+	private final BudgetDxo budgetDxo = new BudgetDxo();
+
+	@SuppressWarnings("unused")
+	private BudgetDao() {
+		//
+	}
+
+	public BudgetDao(final SQLiteDatabase db) {
+		this.db = db;
+	}
+
+	//  create table  ----------------------------------------
+
+	/** テーブル作成  */
+	public void createTable() {
+		StringBuffer sb = new StringBuffer();
+		sb.append(" create table " + TnBudget.tableName() + " (");
+		sb.append(CnBudget.id() + " integer primary key autoincrement, ");
+		sb.append(CnBudget.categoryId() + " integer, ");
+		sb.append(CnBudget.yearMonth() + " integer not null, ");
+		sb.append(CnBudget.budgetPrice() + " integer not null default 0 ");
+		sb.append(");");
+
+		db.execSQL(sb.toString());
+	}
+
+	//  挿入  ----------------------------------------
+
+	/** 予算レコードを挿入する */
+	public void insert(final Budget budget) {
+		ContentValues values = new ContentValues();
+		values = new ContentValues();
+		values.put(CnBudget.categoryId(), budget.categoryId);
+		values.put(CnBudget.yearMonth(), budget.yearMonth);
+		values.put(CnBudget.budgetPrice(), budget.budgetPrice);
+		db.insert(TnBudget.tableName(), null, values);
+	}
+
+	//  更新  ----------------------------------------
+
+	/** 予算レコードを更新する */
+	public void update(final Budget budget) {
+
+		ContentValues contentValues = new ContentValues();
+		contentValues.put(CnBudget.budgetPrice(), budget.budgetPrice);
+
+		db.update(TnBudget.tableName(),//
+					contentValues,//
+					CnBudget.id() + " = ?",//
+					new String[] { budget.id.toString() });
+	}
+
+	//  検索  ----------------------------------------
+
+	public List<Budget> findAll() {
+		ArrayList<Budget> budgetList = new ArrayList<Budget>();
+
+		String orderBy = CnBudget.yearMonth() + " asc, " + CnBudget.categoryId() + " asc";
+		Cursor c = db.query(TnBudget.tableName(), null, null, null, null, null, orderBy);
+		while (c.moveToNext()) {
+			budgetList.add(budgetDxo.createFromCursol(c));
+		}
+		c.close();
+		return budgetList;
+	}
+
+	/**　予算年月をもとに１か月の予算を検索*/
+	public Budget findOneMonthBudgetListByYearMonth(final Integer yearMonth) {
+
+		String whereQuery = CnBudget.yearMonth() + " = ? and " + CnBudget.categoryId() + " is null ";
+		Cursor c = db.query(TnBudget.tableName(), null, whereQuery, new String[] { yearMonth.toString() },
+							null, null, CnBudget.id() + " desc");
+		Budget budget = null;
+		if (c.moveToNext()) {
+			budget = budgetDxo.createFromCursol(c);
+		}
+		c.close();
+		return budget;
+	}
+
+	/**　引数の年月以前の予算を検索*/
+	public List<Budget> findAllMonthBudgetListByYearMonthBefore(final Integer yearMonth,
+			final List<Integer> categoryIdList) {
+		String categoryCondition;
+		if (KakeiboUtils.isEmpty(categoryIdList)) {
+			categoryCondition = " is null ";
+		} else {
+			categoryCondition = " in (" + KakeiboUtils.join(categoryIdList, ",") + ")";
+		}
+
+		String whereQuery = CnBudget.yearMonth() + " <= ? and " + CnBudget.categoryId() + categoryCondition;
+		Cursor c = db.query(TnBudget.tableName(), null, whereQuery, new String[] { yearMonth.toString() },
+							null, null, CnBudget.yearMonth() + " desc");
+		ArrayList<Budget> budgetList = new ArrayList<Budget>();
+		while (c.moveToNext()) {
+			budgetList.add(budgetDxo.createFromCursol(c));
+		}
+		c.close();
+
+		Map<Integer, Budget> map = new HashMap<Integer, Budget>();
+		for (Budget budget : budgetList) {
+			Budget budgetTmp = map.get(budget.yearMonth);
+			if (budgetTmp == null) {
+				map.put(budget.yearMonth, budget);
+			} else {
+				if (budget.id > budgetTmp.id) {
+					map.put(budget.yearMonth, budget);
+				}
+			}
+		}
+		List<Budget> newBudgetList = new ArrayList<Budget>();
+		for (Entry<Integer, Budget> entry : map.entrySet()) {
+			newBudgetList.add(entry.getValue());
+		}
+		Collections.sort(newBudgetList, new Comparator<Budget>() {
+
+			@Override
+			public int compare(final Budget object1, final Budget object2) {
+				return object1.yearMonth < object2.yearMonth ? 1 : -1;
+			}
+
+		});
+
+		return newBudgetList;
+	}
+
+	/**　予算年月をもとに１か月のカテゴリ予算リストを検索*/
+	public List<Budget> findCategoryBudgetListByYearMonth(final Integer yearMonth,
+			final List<Integer> categoryIdList) {
+		StringBuffer findListByYearMonthSql = new StringBuffer();
+		findListByYearMonthSql.append(" select b.* , c._id cid2, c." + CnCategory.categoryName() + " ,c."
+				+ CnCategory.incomeFlg() + ", c." + CnCategory.dispFlg());
+		findListByYearMonthSql.append(" from " + TnCategory.tableName() + " c ");
+		findListByYearMonthSql.append(" left outer join  ");
+		findListByYearMonthSql.append("(select * from " + TnBudget.tableName());
+		findListByYearMonthSql.append("  where " + CnBudget.yearMonth() + " = ? ");
+		findListByYearMonthSql.append("  and " + CnBudget.categoryId() + " is not null )  b  ");
+		findListByYearMonthSql.append(" on  b." + CnBudget.categoryId() + " = c." + CnCategory.id());
+		if (KakeiboUtils.isNotEmpty(categoryIdList)) {
+			findListByYearMonthSql.append(" where c." + CnCategory.id() + " in ("
+					+ KakeiboUtils.join(categoryIdList, ",") + ") ");
+		}
+
+		findListByYearMonthSql.append(" order by  " + CnCategory.position());
+		findListByYearMonthSql.append(";");
+		String[] selectionArgs = new String[] { yearMonth.toString() };
+
+		Cursor c = db.rawQuery(findListByYearMonthSql.toString(), selectionArgs);
+		List<Budget> budetList = new ArrayList<Budget>();
+		while (c.moveToNext()) {
+			Budget budget = budgetDxo.createFromCursol(c);
+			int lastIndex = IdxBudget.lastIndex();
+			budget.categoryId = c.getInt(++lastIndex);
+			budget.categoryName = c.getString(++lastIndex);
+			String incomeFlgStr = c.getString(++lastIndex);
+			budget.incomeFlg = incomeFlgStr == null ? null : Integer.parseInt(incomeFlgStr);
+			String dispFlgStr = c.getString(++lastIndex);
+			budget.dispFlg = dispFlgStr == null ? null : Integer.parseInt(dispFlgStr);
+
+			budetList.add(budget);
+		}
+		c.close();
+		return budetList;
+	}
+
+	//  削除  ----------------------------------------
+
+	/**　IDをもとに削除　*/
+	public void deleteById(final Integer id) {
+
+		db.delete(TnBudget.tableName(), CnBudget.id() + " = ?", new String[] { id.toString() });
+
+	}
+
+	/**　カテゴリIDをもとに削除　*/
+	public void deleteByCategoryId(final Integer categoryId) {
+		if (categoryId == null) {
+			db.delete(TnBudget.tableName(), CnBudget.categoryId() + " is null", null);
+		} else {
+			db.delete(TnBudget.tableName(), CnBudget.categoryId() + " = ?", new String[] { categoryId
+					.toString() });
+		}
+
+	}
+
+	/**　ｊ年月とカテゴリIDをもとに削除　*/
+	public void deleteByCategoryIdYearMonthAndCategoryId(final Integer yearMonth, final Integer categoryId) {
+		if (categoryId == null) {
+			db.delete(TnBudget.tableName(), CnBudget.categoryId() + " is null and " + CnBudget.yearMonth()
+					+ " = ?", new String[] { yearMonth.toString() });
+		} else {
+			db.delete(TnBudget.tableName(), CnBudget.categoryId() + " = ? and " + CnBudget.yearMonth()
+					+ " = ?", new String[] { categoryId.toString(), yearMonth.toString() });
+		}
+
+	}
+
+	/**
+	 * 全削除
+	 */
+	public void deleteAll() {
+		db.delete(TnBudget.tableName(), null, null);
+	}
+
+}

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent"
+	android:layout_height="80sp"
+	android:orientation="horizontal"
+>
+	<!-- 追加ボタン  -->
+	<Button
+		android:text="@string/ADD"
+		android:id="@+id/add_record"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_weight="1"
+		android:drawableLeft="@drawable/add"
+		android:layout_gravity="left|bottom"
+		android:layout_marginRight="5sp"
+		android:layout_marginBottom="1sp"
+	></Button>
+	<LinearLayout
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:orientation="vertical"
+		android:layout_gravity="right|bottom"
+		android:paddingRight="5dip"
+	>
+		<ImageButton
+			android:id="@+id/keyboard_hide"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:background="@drawable/tab_detail_stateful"
+		></ImageButton>
+		<ImageButton
+			android:id="@+id/keyboard_show"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:background="@drawable/tab_simple_stateful"
+		></ImageButton>
+	</LinearLayout>
+</LinearLayout>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<color name="income_color">#ec6800</color>
+	<color name="expense_color">#17184b</color>
+ 
+	<color name="RED">#e60033</color>
+	<color name="WHITE">#FFFFFF</color>
+	<color name="BLACK">#000</color>
+	<color name="OPERAND">#0000ff</color>
+	<color name="BACK_BUTTON">#283837</color>
+	<color name="TOTAL_PRICE_COLOR">#2b2b2b</color>
+	<color name="DISABLED_CATEGORY_NAME">#191970</color>
+	<color name="DARK_TEXT">#0d0015</color>
+	<color name="SELECTED_DEFAULT">#FF8E00</color>
+	
+</resources>

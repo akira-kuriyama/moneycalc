@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<style
+		name="LightDialogText"
+	> 
+		<item name="android:textColor">@color/WHITE</item>
+	</style>
+	
+	<style
+		name="ScreenTitle"  
+	>
+		<item name="android:background">#f3f3f2</item>
+		<item name="android:textColor">@color/DARK_TEXT</item>
+		<item name="android:textSize">15sp</item>
+		<item name="android:gravity">bottom</item>
+		<item name="android:paddingBottom">1dip</item>
+	</style>
+	
+	<style
+		name="ScreenTitleBackground"
+	>
+		<item name="android:background">#f2d2d9</item>
+	</style>
+	
+	<style
+		name="AdditionInfoText"
+	>
+		<item name="android:textSize">12sp</item>
+		
+	</style>
+	
+	<style name="income_expnse_orientation">
+		<item name="android:orientation">vertical</item>
+	</style>
+	
+	<style name="how_to_export_radio_orientation">
+		<item name="android:orientation">vertical</item>
+	</style>
+	
+	<style name="export_specified_period_area">
+		<item name="android:orientation">vertical</item>
+	</style>
+	
+	
+</resources>

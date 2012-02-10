@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+	android:id="@+id/layout_root"
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	android:orientation="vertical"
+	android:paddingLeft="10dip"
+	android:paddingRight="10dip"
+>
+
+	<LinearLayout
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:orientation="horizontal"
+	>
+		<TextView
+			style="@style/LightDialogText"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="@string/edit_category_category_name"
+		>
+		</TextView>
+		<!-- カテゴリ名入力テキストボックス  -->
+		<EditText
+			android:id="@+id/input_value"
+			android:layout_width="200sp"
+			android:layout_height="wrap_content"
+			android:focusable="true"
+			android:inputType="text"
+		>
+		</EditText>
+	</LinearLayout>
+
+	<LinearLayout
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:orientation="horizontal"
+	>
+		<TextView
+			style="@style/LightDialogText"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="@string/edit_category_income_or_expense"
+			android:layout_gravity="center_vertical"
+		>
+		</TextView>
+		<RadioGroup
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:orientation="horizontal"
+		>
+			<RadioButton
+				style="@style/LightDialogText"
+				android:id="@+id/income_flg_off"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="@string/edit_category_expense"
+				android:layout_marginRight="15sp"
+			>
+			</RadioButton>
+			<RadioButton
+				style="@style/LightDialogText"
+				android:id="@+id/income_flg_on"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="@string/edit_category_income"
+				android:layout_marginLeft="15sp"
+			>
+			</RadioButton>
+		</RadioGroup>
+	</LinearLayout>
+
+	<LinearLayout
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:orientation="horizontal"
+	>
+		<TextView
+			style="@style/LightDialogText"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="@string/edit_category_change_order"
+		>
+		</TextView>
+
+		<LinearLayout
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:orientation="horizontal"
+		>
+
+			<Spinner
+				android:id="@+id/category_position_spinner"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:drawSelectorOnTop="true"
+			>
+			</Spinner>
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="@string/edit_category_order_unit"
+				android:textSize="7pt"
+				style="@style/LightDialogText"
+				android:layout_gravity="center_vertical"
+			>
+			</TextView>
+
+			<Spinner
+				android:id="@+id/category_position_orientation_spinner"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:drawSelectorOnTop="true"
+				android:entries="@array/CATEGORY_POSITION_ITEM"
+			>
+			</Spinner>
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="@string/edit_category_move"
+				android:textSize="7pt"
+				style="@style/LightDialogText"
+				android:layout_gravity="center_vertical"
+			>
+			</TextView>
+		</LinearLayout>
+	</LinearLayout>
+
+</LinearLayout>

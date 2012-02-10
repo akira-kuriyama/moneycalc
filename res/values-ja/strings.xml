@@ -1,0 +1,295 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="app_name">マネーCalc</string>
+	<string name="app_info_appli_email_msg">ご要望、バグ報告等はこちらまで</string>
+
+	<string name="REGISTER_DISPLAY_NAME">記入</string>
+	
+	<string name="SHORTCUT_NAME">マネーCalc(記入)</string>
+	<string name="notification_message">記入画面を開きます</string>
+	
+	<string name="ADD">　登　録　</string>
+	<string name="ADD_CATEGORY">カテゴリの登録</string>
+	<string name="ADD_FILTER">フィルターの登録</string>
+	<string name="EDIT">　保　存　</string>
+	<string name="CANCEL">キャンセル</string>
+	<string name="PREVIOUS_MONTH">前月</string>
+	<string name="NEXT_MONTH">次月</string>
+	<string name="CURRENT_MONTH">今月</string>
+	<string name="CURRENT_WEEK">今週</string>
+	<string name="CURRENT_DAY">今日</string>
+	
+	<string name="admob_keyword">get</string>
+	
+	<string name="sunday">日曜</string>
+	<string name="monday">月曜</string>	
+
+	<string name="year_format">yyyy年</string>	
+	<string name="month_format">MM月</string>	
+	<string name="day_format">dd日</string>	
+	<string name="budget_title_frag">の予算設定</string>	
+
+	<string name="up">上</string>
+	<string name="down">下</string>
+
+	<string name="DELETE_CATEGORY_MESSAGE">※削除すると、このカテゴリを選択していた家計簿データも一緒に消えます。</string>
+	<string name="DELETE_CATEGORY_TITLE">本当に削除しますか？</string>
+
+	<string name="BUTTON_YES">はい</string>
+	<string name="BUTTON_NO">いいえ</string>
+
+	<string name="INCOME_NAME">収入</string>
+	<string name="EXPENSE_NAME">支出</string>
+	
+	<string name="income_label">(収入)</string>
+	<string name="budget_label">予算:</string>
+	<string name="brought_over_label">先月繰越:</string>
+	<string name="balance_label">残高:</string>
+	
+	<string name="YEAR">１年</string>
+	<string name="HALF_YEAR">半年</string>
+	<string name="THREE_MONTH">３ヶ月</string>
+	<string name="MONTH">１ヶ月</string>
+	<string name="WEEK">１週間</string>
+	<string name="DAY">１日</string>
+
+	<string name="filter_none">フィルター指定なし</string>
+	<string name="filter_default">(デフォルト)</string>
+
+	<string name="DIALOG_EDIT">編集</string>
+	<string name="DIALOG_DELETE">削除</string>
+	<string name="DIALOG_CANCEL">キャンセル</string>
+	<string name="DIALOG_TITLE_CHOICE">選択してください</string>
+	<string name="DIALOG_DECIDE">確定</string>
+	<string name="DIALOG_DECIDE2">設定する</string>
+	<string name="DIALOG_TITLE_CATEGRY_EDIT">カテゴリの編集</string>
+	<string name="DIALOG_TITLE_CATEGRY_ADD">カテゴリの登録</string>
+	<string name="DIALOG_TITLE_REGISTER_DATE_EDIT">購入日時の変更</string>
+	<string name="DIALOG_TITLE_DELETE_CONFIRM">本当に削除しますか？</string>
+	<string name="DIALOG_TITLE_CHANGE_INTERVAL">表示期間を選択して下さい</string>
+	<string name="DIALOG_TITLE_CHANGE_FILTER">フィルターを選択して下さい</string>
+
+	<string name="MENU_VIEW_PIE_GRAPH">円グラフ表示</string>
+	<string name="MENU_VIEW_BAR_GRAPH">棒グラフ表示</string>
+	<string name="MENU_CHANGE_INTERVAL">表示期間変更</string>
+	<string name="MENU_CHANGE_FILTER">フィルター変更</string>
+	<string name="MENU_PREFERENCE">設定</string>
+	<string name="MENU_REGISTER">記入</string>
+	
+	<string name="GRAPH_CREATING_MESSAGE">グラフ生成中...</string>
+	<string name="retry_graph_download">リトライ</string>
+	<string name="please_retry_graph_download">GoogleChartAPIへのネットワーク接続が出来ませんでした。\nお手数ですがネットワークが繋がる場所で再度お試し下さい。</string>
+	
+	<string name="KAKEIBO_REGISTER_COMPLETE_MESSAGE">記入しました</string>
+	<string name="SETTING_COMPLETE_MESSAGE">設定しました</string>
+	<string name="DELETE_COMPLETE_MESSAGE">削除しました</string>
+	<string name="EDIT_COMPLETE_MESSAGE">編集しました</string>
+
+	<string name="ERRORS_CANNOT_CATEGORY_DELETE">カテゴリをすべて消すことは出来ません</string>
+	<string name="ERRORS_EMPTY_CATEGORY_NAME">カテゴリ名を入力してください</string>
+	<string name="ERRORS_DUPLICATE_CATEGORY_NAME">カテゴリ名が重複しています</string>
+	<string name="ERRORS_MAX_PRICE_OVER">金額は1億以下で入力してください</string>
+	<string name="ERRORS_REIGSTER_MINUS_PRICE">マイナスの金額は登録できません</string>
+	
+	<string name="REGISTER_COMPLETE_MESSAGE">登録しました</string>
+
+	<string name="register_record_price">金額　　：　</string>
+	<string name="register_record_category">カテゴリ：　</string>
+	<string name="register_record_memo">メモ　　：　</string>
+	<string name="register_record_purchase_date">購入日時：　</string>
+	<string name="register_record_purchase_date_edit_button">変更</string>
+
+	<string name="edit_record_title">レコードの編集</string>
+	<string name="manage_budget_title">１ヶ月の予算設定</string>
+
+	<string name="edit_category_title">カテゴリの設定</string>
+	<string name="edit_category_category_name">カテゴリ名：</string>
+	<string name="edit_category_income_or_expense">収支属性　：</string>
+	<string name="edit_category_expense">支出</string>
+	<string name="edit_category_income">収入</string>
+	<string name="edit_category_change_order">表示順変更：</string>
+	<string name="edit_category_order_unit">つ</string>
+	<string name="edit_category_move">に移動する</string>
+
+	<string name="manage_filter_title">フィルターの設定</string>
+	<string name="add_filter_title">フィルターの登録</string>
+	<string name="edit_filter_title">フィルターの編集</string>
+	<string name="filter_name_label">フィルター名</string>
+	<string name="required_filter_name">フィルター名を入力して下さい</string>
+	<string name="required_filter_category">１つ以上チェックをつけて下さい</string>
+	<string name="filter_name_select_msg">チェックをつけるとそのカテゴリで絞りこめます</string>
+	<string name="set_default_filter_msg">デフォルトのフィルターにする</string>
+
+
+	<string name="calculate_msg">集計中...</string>
+
+	<string name="NO_SETTING_BUDGET">[未設定]</string>
+	<string name="IMPOSSIBLE_SETTING_BUDGET">[設定不可]</string>
+	<string name="prev_month_same_budget_setting">先月と同じ予算を設定する</string>
+	    <string name="manage_budget_budget">予算　　　：</string>
+	<string name="manage_budget_prev_month">先月の予算：</string>
+	<string name="manage_budget_category_total_budget">カテゴリごとの合計予算：</string>
+	<string name="manage_budget_header_category_total_budget">カテゴリごとの合計予算</string>
+	<string name="manage_budget_same_category_total_budget">カテゴリごとの合計予算と\n同じ予算を設定する</string>
+	<string name="copy_previous_month_budget_dialog_title">先月と同じ予算を設定しますか？</string>
+	<string name="copy_previous_month_budget_dialog_message">※先月と同じ予算を設定すると\nこの画面で設定している予算が\n全て先月の予算金額で上書かれます。</string>
+
+	<string name="menu_title_manage_budget">予算の設定</string>
+	<string name="menu_title_edit_category">カテゴリの設定</string>
+	<string name="menu_title_edit_filter">フィルターの設定</string>
+	<string name="menu_title_data_export_and_import">エクスポート</string>
+	<string name="menu_title_data_backup_and_restore">バックアップ&amp;リストア</string>
+	<string name="menu_title_total_preference">全体設定</string>
+
+	<string name="pref_settings_title">マネーCalc設定画面</string>
+	<string name="pref_notification_bar">ステータスバー</string>
+	<string name="pref_is_disp_notification_bar">ステータスバーに常駐させますか？</string>
+	
+	<string name="pref_settings_title_start">起動</string>
+	<string name="pref_settings_title_register">記入</string>
+	<string name="pref_settings_title_list">合計・一覧</string>
+	<string name="pref_settings_title_other">その他</string>
+	
+	<string name="pref_month_carryover">月の残高繰越</string>
+	<string name="pref_is_month_carryover">月の残高繰越を有効にしますか？</string>
+	<string name="pref_category_carryover">カテゴリごとの残高繰越</string>
+	<string name="pref_is_category_carryover">カテゴリごとの残高繰越を有効にしますか？</string>
+	
+	<string name="pref_register_after_action">家計簿記入後の動作</string>
+	<string name="pref_is_move_day_list_after_register">家計簿記入後、１日の一覧画面へ移動しますか？</string>
+	<string name="pref_first_day_of_week">週の初めの曜日</string>
+	<string name="pref_is_first_day_of_week">週の初めの曜日は？</string>
+	<string name="pref_title_carryover_condition">残高繰越条件</string>
+	<string name="pref_dialog_title_carryover_condition">残高繰越条件</string>
+	<string name="carryover_condition_plus_only">残高がマイナスの金額なら繰り越さない</string>
+	<string name="carryover_condition_both">残高がマイナスの金額でも繰り越す</string>
+	<string name="pref_currency_unit_title">通貨単位</string>
+	<string name="pref_select_currency_unit_msg">通貨単位を選んで下さい</string>
+	<string name="pref_input_currency_unit_msg">通貨単位を入力して下さい</string>
+	<string name="pref_select_currency_unit_position_msg">通貨単位の表示位置を選んで下さい</string>
+	<string name="pref_currency_position_front">金額より前</string>
+	<string name="pref_currency_position_back">金額の後ろ</string>
+	<string name="pref_first_day_of_month">月の開始日</string>	
+	<string name="pref_is_first_day_of_month">月の開始日は何日?</string>
+	<string name="pref_send_log">開発者に不具合を報告</string>
+	
+	
+	<string name="backup_restore_title">バックアップ&amp;リストア</string>
+	<string name="backup_restore_select_action_title_msg">【他の携帯にデータ移行する場合の流れ】</string>
+	<string name="backup_restore_select_action_1_msg">SDカード上にデータをバックアップ</string>
+	<string name="backup_restore_select_action_2_msg">データを復元したい端末にさっきのSDカードをさして、バックアップしたデータを復元</string>
+	<string name="backup_restore_select_action_no_1_msg">１、</string>
+	<string name="backup_restore_select_action_no_2_msg">２、</string>
+	<string name="backup_select_button_text">データをバックアップする場合はこちら</string>
+	<string name="restore_select_button_text">データを復元する場合はこちら</string>
+	<string name="backup_delete_select_button_text">バックアップしたデータを\n削除(整理)する場合はこちら</string>
+
+	<string name="backup_no_sdcard_error_msg">SDカードがささっていません。</string>
+	<string name="backup_restore_backup_msg">SDカード上にデータをバックアップします</string>
+	<string name="backup_restore_backup_notice_msg">※バックアップ対象データは、マネーCalc内の全てのデータです。</string>
+	<string name="do_backup_button_text">バックアップの実行</string>
+	<string name="during_backup_msg">バックアップ中...</string>
+	<string name="during_restore_msg">復元中...</string>
+	<string name="backup_error_msg">バックアップ中にエラーが起きました。</string>
+	<string name="restore_error_msg">復元中にエラーが起きました。</string>
+	<string name="error_common_msg">もう一度操作をお試し下さい。それでも駄目な場合は、お手数ですが作者にメールを送ってください。。\n marronShepherd2@gmail.com</string>
+	<string name="restore_error_common_msg">以下をお試し下さい。\n・もう一度復元を行ってみる。\n・もう一度バックアップからやり直す。\nそれでも駄目な場合は、お手数ですが作者にメールを送ってください。。\n marronShepherd2@gmail.com</string>
+	<string name="backup_complete_msg">バックアップが完了しました！</string>
+	<string name="restore_complete_msg">復元が完了しました！</string>
+	<string name="restore_confirm_title_msg">復元を実行しますか？</string>
+	<string name="restore_confirm_msg">注意：\nバックアップデータを復元すると、現在のマネーCalc内のデータはすべて上書かれます。</string>
+
+	<string name="backup_restore_restore_msg">SDカードからデータを復元します</string>
+	<string name="backup_restore_restore_notice_msg">※注意：\nバックアップデータを復元すると、現在のマネーCalc内のデータはすべて上書かれます。</string>
+	<string name="do_restore_button_text">復元の実行</string>
+
+	<string name="backup_restore_backup_delete_msg">【バックアップしたデータを選択して削除】</string>
+	<string name="do_backup_delete_button_text">選択したバックアップデータを削除する</string>
+	<string name="backup_restore_all_backup_delete_msg">【バックアップしたデータを全て削除】</string>
+	<string name="do_all_backup_delete_button_text">バックアップデータを全て削除する</string>
+	<string name="backup_data_is_nothing_msg">バックアップデータはありません</string>
+	
+	<string name="export_import_title">エクスポート / インポート</string>
+	<string name="export_title">エクスポート</string>
+	<string name="import_title">インポート</string>
+	<string name="export_import_select_action_title_msg">【エクスポート / インポート】</string>
+	<string name="import_select_button_text">インポートはこちら</string>
+	<string name="export_select_button_text">エクスポートはこちら</string>
+
+	<string name="how_to_export_text">エクスポート方法</string>
+	<string name="export_to_mail_attached">添付ファイルとしてメールで送信</string>
+	<string name="export_to_mail_attached_notice">※もし、お使いのメールアプリにうまく添付されない場合は、公式Gmailアプリで試してみてください。</string>	
+	<string name="export_to_mail_message_body">メール本文に貼り付けてメールで送信</string>
+	<string name="export_to_mail_message_body_notice">※もし、お使いのメールアプリにうまく貼り付けられない場合は、公式Gmailアプリで試してみてください。</string>	
+	<string name="export_to_sd_card">SDカードに保存</string>
+	<string name="export_to_sd_card_notice">※エクスポート先は /moneyCalc/export/</string>
+	<string name="do_export_button_text">エクスポートの実行</string>
+	<string name="export_period">エクスポート対象の期間</string>
+	<string name="export_to_sd_card_no_sdcard_error_msg">SDカードをさしてください。</string>
+	<string name="export_to_mail_no_sdcard_error_msg">SDカードをさしてください。(エクスポートデータの一時的な保存先に、SDカードを使っています。)</string>
+	<string name="export_error_msg">エクスポート中にエラーが起きました。</string>
+	<string name="export_complete_msg">エクスポートが完了しました！</string>
+	<string name="export_destination_msg">エクスポートファイル：</string>
+	<string name="export_data_nothing">指定された期間には、家計簿データがありません。</string>
+	<string name="during_export_msg">エクスポート中...</string>
+	<string name="export_mail_subject">マネーCalc エクスポートデータ</string>
+	
+	
+	<string name="export_period_this_month">今月</string>
+	<string name="export_period_last_month">先月</string>
+	<string name="export_period_past_three_month">過去3ヶ月</string>
+	<string name="export_period_past_half_year">過去半年</string>
+	<string name="export_period_this_year">今年</string>
+	<string name="export_period_last_year">去年</string>
+	<string name="export_period_specified">期間指定</string>
+
+	<string name="export_period_start_text">開始日</string>
+	<string name="export_period_end_text">終了日</string>
+	
+	<string name="category_column_name_category_name">カテゴリ名</string>
+	<string name="category_column_name_position">表示順</string>
+	<string name="category_column_name_incomeFlg">収支属性</string>
+	
+	<string name="budget_column_name_category_name">カテゴリ名</string>
+	<string name="budget_column_name_yearmonth">年月</string>
+	<string name="budget_column_name_budget_price">予算金額</string>
+	
+	<string name="filter_column_name_filter_name">フィルダー名</string>
+	<string name="filter_column_name_category_id_list">カテゴリIdリスト</string>
+	<string name="filter_column_name_is_default">デフォルトフラグ</string>
+
+	<string name="kakeibo_data_column_name_price">金額</string>
+	<string name="kakeibo_data_column_name_category_name">カテゴリ名</string>
+	<string name="kakeibo_data_column_name_registerDate">購入日時</string>
+	<string name="kakeibo_data_column_name_memo">メモ</string>
+	<string name="kakeibo_data_column_name_importVersion">インポートバージョン</string>
+	<string name="kakeibo_data_column_name_place">購入場所</string>
+	<string name="kakeibo_data_column_name_latitude">購入緯度</string>
+	
+	<string name="send_log_title">開発者に不具合を報告</string>
+	<string name="send_log_notice_main_msg">不具合やおかしな現象が起きた場合は、\nお手数ですが開発者に不具合を報告して下さい。\n下のボタンを押すとアプリログも一緒に送信します。</string>
+	<string name="send_log_notice_sub_msg">※ログにはマネーCalc内のデータがすべて含まれます。</string>
+	<string name="send_log_button_text">不具合を報告</string>
+	<string name="send_log_subject">不具合報告</string>
+	<string name="send_log_content">お名前：\n\n\n不具合内容：\n\n\n</string>
+	<string name="mailer_chooser">メールアプリを選択して下さい</string>
+	
+	
+	<string name="pref_title_balance_calculation_method">残高算出方法</string>
+	<string name="pref_dialog_title_balance_calculation_method">残高算出方法を選択して下さい</string>
+	
+	<string name="balance_calculation_method_none">残高表示なし</string>
+	<string name="balance_calculation_method_income_minus_expense">残高 = 収入 - 支出</string>
+	<string name="balance_calculation_method_budget_minus_expense">残高 = 予算 - 支出</string>
+	<string name="balance_calculation_method_budget_plus_income_minus_expense">残高 = 予算 + 収入 - 支出</string>
+	<string name="balance_calculation_method_income_plus_carryover_minus_expense">残高 = 収入 + 先月繰越 - 支出</string>
+	<string name="balance_calculation_method_budget_plus_carryover_minus_expense">残高 = 予算 + 先月繰越 - 支出</string>
+	<string name="balance_calculation_method_budget_plus_income_plus_carryover_minus_expense">残高 = 予算 + 収入 + 先月繰越 - 支出</string>
+	
+	<string name="app_info_appli_name">【アプリ名】</string>
+	<string name="app_info_appli_version">【version】</string>
+	<string name="app_info_appli_site">【サイト】</string>
+	<string name="app_info_appli_site_history">【更新履歴】</string>
+	<string name="app_info_appli_author">【作者】</string>
+	<string name="app_info_appli_email">【e-mail】</string>
+</resources>

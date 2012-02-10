@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources>
+	<dimen name="register_height_distance">20dip</dimen>
+	<dimen name="register_height_distance_for_diesire">0dip</dimen>
+</resources>

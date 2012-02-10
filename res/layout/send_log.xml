@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent"
+	android:layout_height="wrap_content"
+	android:orientation="vertical"
+>
+	<!-- タイトル -->
+	<TextView
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:text="@string/send_log_title"
+		android:drawableLeft="@drawable/airplane"
+		style="@style/ScreenTitle"
+	>
+	</TextView>
+	<include
+		layout="@layout/title_bottom_divider" />
+
+	<TextView
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:layout_marginTop="10dip"
+		android:textSize="16dip"
+		android:text="@string/send_log_notice_main_msg"
+	>
+	</TextView>
+	<TextView
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:layout_marginTop="5dip"
+		android:text="@string/send_log_notice_sub_msg"
+	>
+	</TextView>
+	<TextView
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:layout_marginTop="5dip"
+		android:text="@string/export_to_mail_attached_notice"
+	>
+	</TextView>
+
+	<Button
+		android:id="@+id/send_log_button"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:text="@string/send_log_button_text"
+		android:layout_marginTop="20dip"
+	>
+	</Button>
+
+
+</LinearLayout>

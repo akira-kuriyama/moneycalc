@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent"
+	android:layout_height="wrap_content"
+	android:orientation="vertical"
+>
+	<!-- タイトル -->
+	<TextView
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:text="@string/backup_restore_title"
+		android:drawableLeft="@drawable/office_folders"
+		style="@style/ScreenTitle"
+	>
+	</TextView>
+	<include
+		layout="@layout/title_bottom_divider" />
+
+	<TextView
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:layout_marginTop="15dip"
+		android:text="@string/backup_restore_backup_delete_msg"
+	>
+	</TextView>
+
+	<Spinner
+		android:id="@+id/backup_data_spinner"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:drawSelectorOnTop="true"
+		android:layout_marginTop="5dip"
+		android:layout_marginLeft="10dip"
+		android:layout_marginRight="10dip"
+	>
+	</Spinner>
+	<Button
+		android:id="@+id/do_backup_delete_button"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:text="@string/do_backup_delete_button_text"
+		android:layout_marginTop="15dip"
+		android:layout_marginLeft="10dip"
+		android:layout_marginRight="10dip"
+	>
+	</Button>
+
+	<TextView
+		android:layout_width="fill_parent"
+		android:layout_height="1dip"
+		android:layout_marginRight="5dip"
+		android:layout_marginLeft="5dip"
+		android:layout_marginTop="25dip"
+		android:background="@color/BLACK"
+	>
+	</TextView>
+
+	<TextView
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:layout_marginTop="15dip"
+		android:text="@string/backup_restore_all_backup_delete_msg"
+	>
+	</TextView>
+
+	<Button
+		android:id="@+id/do_all_backup_delete_button"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:text="@string/do_all_backup_delete_button_text"
+		android:layout_marginTop="5dip"
+		android:layout_marginLeft="10dip"
+		android:layout_marginRight="10dip"
+	>
+	</Button>
+
+</LinearLayout>

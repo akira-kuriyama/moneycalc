@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources>
+	<dimen name="register_height_distance">0dip</dimen>
+	<dimen name="register_height_distance_for_diesire">0dip</dimen>
+	<dimen name="incame_expense_name_text_size">14sp</dimen>
+	<dimen name="operand_name_text_size">20sp</dimen>
+	<dimen name="price_value_text_size">20sp</dimen>
+	<dimen name="register_height_distance_for_qvga">0sp</dimen>
+</resources>

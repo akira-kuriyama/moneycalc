@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	android:orientation="vertical"
+>
+	<!-- タイトル -->
+	<TextView
+		android:id="@+id/this_month_text"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:drawableLeft="@drawable/book_accept_mini"
+		style="@style/ScreenTitle"
+	>
+	</TextView>
+	<include
+		layout="@layout/title_bottom_divider" />
+
+	<LinearLayout
+		android:layout_width="fill_parent"
+		android:layout_height="fill_parent"
+		android:orientation="horizontal"
+	>
+		<!-- レコード一覧 -->
+		<LinearLayout
+			android:layout_width="wrap_content"
+			android:layout_height="fill_parent"
+			android:orientation="vertical"
+				android:layout_weight="1"
+		>
+			<!-- divider -->
+			<ListView
+				android:id="@android:id/list"
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:choiceMode="singleChoice"
+				android:clickable="true"
+			></ListView>
+			<ImageView
+				android:layout_width="fill_parent"
+				android:layout_height="1sp"
+				android:src="@android:drawable/divider_horizontal_bright"
+				android:scaleType="fitXY"
+				android:gravity="fill_horizontal"
+			>
+			</ImageView>
+		</LinearLayout>
+
+		<LinearLayout
+			android:layout_width="wrap_content"
+			android:layout_height="fill_parent"
+			android:orientation="vertical"
+			android:layout_gravity="center"
+		>
+			<Button
+				android:id="@+id/previous"
+				android:layout_height="wrap_content"
+				android:layout_width="wrap_content"
+				android:layout_weight="1"
+				android:drawableTop="@drawable/back"
+				android:gravity="center"
+			></Button>
+
+			<Button
+				android:id="@+id/next"
+				android:layout_height="wrap_content"
+				android:layout_width="wrap_content"
+				android:layout_weight="1"
+				android:drawableBottom="@drawable/next"
+				android:gravity="center"
+			></Button>
+		</LinearLayout>
+		<!-- フッター -->
+		<include
+			layout="@layout/footer" />
+	</LinearLayout>
+
+
+</LinearLayout>

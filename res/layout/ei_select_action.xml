@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent"
+	android:layout_height="wrap_content"
+	android:orientation="vertical"
+>
+	<!-- タイトル -->
+	<TextView
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:text="@string/export_import_title"
+		android:drawableLeft="@drawable/attachment"
+		style="@style/ScreenTitle"
+	>
+	</TextView>
+	<include
+		layout="@layout/title_bottom_divider" />
+
+	<TextView
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:text="@string/export_import_select_action_title_msg"
+	>
+	</TextView>
+
+
+	<Button
+		android:id="@+id/export_select_button"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:text="@string/export_select_button_text"
+		android:layout_marginTop="10dip"
+	>
+	</Button>
+	<Button
+		android:id="@+id/import_select_button"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:text="@string/import_select_button_text"
+		android:layout_marginTop="10dip"
+	>
+	</Button>
+	
+
+
+</LinearLayout>

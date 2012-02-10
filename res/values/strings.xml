@@ -1,0 +1,302 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="app_name">MoneyCalc</string>
+	<string name="app_info_appli_email_msg">Requests, bug reports, etc. are here</string>
+	
+	<string name="version">0.9.4</string>
+	<string name="mail_address">marronShepherd2@gmail.com</string>
+	<string name="site_url">http://sites.google.com/site/moneycalc4android/</string>
+	<string name="site_history_url">http://sites.google.com/site/moneycalc4android/home/history/</string>
+
+	<string name="SHORTCUT_NAME">MoneyCalc</string>
+	<string name="notification_message">Open Registration screen</string>
+
+	<string name="REGISTER_DISPLAY_NAME">Add　</string>
+
+	<string name="ADD">　Add　</string>
+	<string name="ADD_CATEGORY">Add Category</string>
+	<string name="ADD_FILTER">Add Filter</string>
+	<string name="EDIT">　OK　</string>
+	<string name="CANCEL">Cancel</string>
+	<string name="PREVIOUS_MONTH">Prev month</string>
+	<string name="NEXT_MONTH">Next month</string>
+	<string name="CURRENT_MONTH">Month</string>
+	<string name="CURRENT_WEEK">Week</string>
+	<string name="CURRENT_DAY">Day　</string>
+	
+	<string name="admob_keyword">coupon</string>
+
+	<string name="sunday">Sunday</string>
+	<string name="monday">Monday</string>
+
+	<string name="year_format">yyyy</string>	
+	<string name="month_format">MMM</string>	
+	<string name="day_format">dd</string>	
+	<string name="budget_title_frag">Budget setting in</string>	
+	
+	<string name="up">Up</string>
+	<string name="down">Down</string>
+	
+	<string name="DELETE_CATEGORY_MESSAGE">#This category was selected when you delete a household data also disappear together </string>
+	<string name="DELETE_CATEGORY_TITLE">Do you really want to delete?</string>
+	
+	<string name="BUTTON_YES">Yes</string>
+	<string name="BUTTON_NO">No</string>
+	
+	<string name="INCOME_NAME">income</string>
+	<string name="EXPENSE_NAME">expense</string>
+
+	<string name="income_label">(income)</string>
+	<string name="budget_label">budget:</string>
+	<string name="brought_over_label">carryover:</string>
+	<string name="balance_label">balance:</string>
+
+	<string name="YEAR">One year</string>
+	<string name="HALF_YEAR">Half year</string>
+	<string name="THREE_MONTH">Three months</string>
+	<string name="MONTH">One month</string>
+	<string name="WEEK">One week</string>
+	<string name="DAY">One day</string>
+	
+	<string name="filter_none">No Filter</string>
+	<string name="filter_default">(default)</string>
+	
+	<string name="DIALOG_EDIT">Edit</string>
+	<string name="DIALOG_DELETE">Delete</string>
+	<string name="DIALOG_DECIDE2">OK</string>
+	<string name="DIALOG_CANCEL">Cancel</string>
+	<string name="DIALOG_TITLE_CHOICE">Please select</string>
+	<string name="DIALOG_DECIDE">OK</string>
+	<string name="DIALOG_TITLE_CATEGRY_EDIT">Edit Category</string>
+	<string name="DIALOG_TITLE_CATEGRY_ADD">Registration Category</string>
+	<string name="DIALOG_TITLE_REGISTER_DATE_EDIT">Change Purchase Date</string>
+	<string name="DIALOG_TITLE_DELETE_CONFIRM">Do you really want to delete?</string>
+	<string name="DIALOG_TITLE_CHANGE_INTERVAL">Please select the display period</string>
+	<string name="DIALOG_TITLE_CHANGE_FILTER">Please select Filter</string>
+
+	<string name="MENU_VIEW_PIE_GRAPH">Pie Chart</string>
+	<string name="MENU_VIEW_BAR_GRAPH">Bar Chart</string>
+	<string name="MENU_CHANGE_INTERVAL">Change Period</string>
+	<string name="MENU_CHANGE_FILTER">Change Filter</string>
+	<string name="MENU_PREFERENCE">Settings</string>
+	<string name="MENU_REGISTER">Add</string>
+	
+	<string name="GRAPH_CREATING_MESSAGE">Generating chart...</string>
+	<string name="retry_graph_download">Retry</string>
+	<string name="please_retry_graph_download">Could not connect to GoogleChartAPI. \nPlease try again in a connected network where.</string>
+			
+	<string name="KAKEIBO_REGISTER_COMPLETE_MESSAGE">Registered</string>
+	<string name="SETTING_COMPLETE_MESSAGE">The setting was completed</string>
+	<string name="DELETE_COMPLETE_MESSAGE">Deleted</string>
+	<string name="EDIT_COMPLETE_MESSAGE">Edited</string>
+	
+	<string name="ERRORS_CANNOT_CATEGORY_DELETE">Cannot delete all categories</string>
+	<string name="ERRORS_EMPTY_CATEGORY_NAME">Please enter a category name</string>
+	<string name="ERRORS_DUPLICATE_CATEGORY_NAME">Duplicate category name</string>
+	<string name="ERRORS_MAX_PRICE_OVER">Please enter amount is less than 100000000</string>
+	<string name="ERRORS_REIGSTER_MINUS_PRICE">Cannot register negative amount</string>
+	
+	<string name="REGISTER_COMPLETE_MESSAGE">Registered</string>
+
+	        <string name="register_record_price">Price   ：　</string>
+	     <string name="register_record_category">Category：　</string>
+	         <string name="register_record_memo">Memo    ：　</string>
+	<string name="register_record_purchase_date">Purchase date：</string>
+	<string name="register_record_purchase_date_edit_button">Change</string>
+	
+	<string name="edit_category_title">Category Setting</string>
+	<string name="edit_category_category_name">Category name：</string>
+	<string name="edit_category_income_or_expense">Expense or income：</string>
+	<string name="edit_category_expense">expense</string>
+	<string name="edit_category_income">income</string>
+	<string name="edit_category_change_order">Change order：</string>
+	<string name="edit_category_order_unit"> </string>
+	<string name="edit_category_move"> </string>
+	
+	<string name="manage_filter_title">Filter Setting</string>
+	<string name="add_filter_title">Add Filter</string>
+	<string name="edit_filter_title">Edit Filter</string>
+	<string name="filter_name_label">Filter Name</string>
+	<string name="required_filter_name">Please enter a filter name</string>
+	<string name="required_filter_category">Please select category</string>
+	<string name="filter_name_select_msg">if checked, narrow down result by category</string>
+	<string name="set_default_filter_msg">set default fileter</string>
+	
+	<string name="edit_record_title">Edit Record</string>
+	<string name="manage_budget_title">Budget setting of one month</string>
+	
+	<string name="calculate_msg">Tallying...</string>
+	
+	<string name="NO_SETTING_BUDGET">[unsetting]</string>
+	<string name="IMPOSSIBLE_SETTING_BUDGET">[can\'t setting]</string>
+	<string name="prev_month_same_budget_setting">Set the same previous month budget</string>
+	 <string name="manage_budget_budget">Budget　　　：</string>
+	<string name="manage_budget_prev_month">Prev month budget：</string>
+	<string name="manage_budget_category_total_budget">Category total budget：</string>
+	<string name="manage_budget_header_category_total_budget">Category total budget</string>
+	<string name="manage_budget_same_category_total_budget">Set the same \ncategory total budget</string>
+	<string name="copy_previous_month_budget_dialog_title">Would you like to set the same budget last month?</string>
+	<string name="copy_previous_month_budget_dialog_message">※All are written in the previous month budget</string>
+	
+	<string name="menu_title_manage_budget">Budget settings</string>
+	<string name="menu_title_edit_category">Category settings</string>
+	<string name="menu_title_edit_filter">Filter setting</string>
+	<string name="menu_title_data_export_and_import">Export</string>
+	<string name="menu_title_data_backup_and_restore">Backup &amp; Restore</string>
+	<string name="menu_title_total_preference">Total settings</string>
+	
+	<string name="pref_settings_title">MoneyCalc Settings</string>
+	<string name="pref_notification_bar">Notification bar</string>
+	<string name="pref_is_disp_notification_bar">Display Icon on notification bar always</string>
+	
+	<string name="pref_settings_title_start">Application start</string>
+	<string name="pref_settings_title_register">add</string>
+	<string name="pref_settings_title_list">total/list</string>
+	<string name="pref_settings_title_other">other</string>
+	
+	<string name="pref_month_carryover">Month-carryover feature</string>
+	<string name="pref_is_month_carryover">Use month-carryover feature?</string>
+	<string name="pref_category_carryover">Category-carryover feature</string>
+	<string name="pref_is_category_carryover">Use category-carryover feature?</string>	
+	
+	<string name="pref_register_after_action">Action after registration</string>
+	<string name="pref_is_move_day_list_after_register">Dispaly day-list after registration</string>
+	<string name="pref_first_day_of_week">The first day of the week</string>
+	<string name="pref_is_first_day_of_week">The first day of the week?</string>	
+	<string name="pref_title_carryover_condition">Carryover conditions</string>
+	<string name="pref_dialog_title_carryover_condition">Carryover conditions</string>
+	<string name="carryover_condition_plus_only">Balance is plus only</string>
+	<string name="carryover_condition_both">Plus and minus balance of both</string>
+	<string name="pref_currency_unit_title">Currency type</string>
+	<string name="pref_select_currency_unit_msg">Please select Currency type</string>
+	<string name="pref_input_currency_unit_msg">Please input Currency type</string>
+	<string name="pref_select_currency_unit_position_msg">Please select Currency Unit Positon</string>
+	<string name="pref_currency_position_front">ahead of the price</string>
+	<string name="pref_currency_position_back">back of the price</string>
+	<string name="pref_first_day_of_month">The first day of the month</string>	
+	<string name="pref_is_first_day_of_month">What is the first day of the month?</string>
+	<string name="pref_send_log">Report Bugs To Developer</string>
+	
+	
+	<string name="backup_restore_title">Backup &amp; Restore</string>
+	<string name="backup_restore_select_action_title_msg">【How to Backup and Restore】</string>
+	<string name="backup_restore_select_action_1_msg">Back up your data on SD card</string>
+	<string name="backup_restore_select_action_2_msg">Restore the data to the device you want to restore the data</string>
+	<string name="backup_restore_select_action_no_1_msg">1, </string>
+	<string name="backup_restore_select_action_no_2_msg">2, </string>	
+	
+	
+	<string name="backup_select_button_text">backup is here</string>
+	<string name="restore_select_button_text">restore is here</string>
+	<string name="backup_delete_select_button_text">delete the backed up data is here</string>
+	
+	<string name="backup_no_sdcard_error_msg">Please mount the SD Card.</string>
+	<string name="backup_restore_backup_msg">Back up your data on SD card</string>
+	<string name="backup_restore_backup_notice_msg"></string>
+	<string name="do_backup_button_text">Backup!</string>
+	<string name="during_backup_msg">Please wait...</string>
+	<string name="during_restore_msg">Please wait...</string>
+	<string name="backup_error_msg">An error occurred during backup.</string>
+	<string name="restore_error_msg">An error occurred during restore.</string>
+	<string name="error_common_msg">Please try the operation again. If it still fails, please send an email to the developer.\n marronShepherd2@gmail.com</string>
+	<string name="restore_error_common_msg">Please try the following.\n-Do the restore again.\n-Try the backup again.\nIf it still fails, please send an email to the developer.\n marronShepherd2@gmail.com</string>
+	<string name="backup_complete_msg">Backup complete!</string>
+	<string name="restore_complete_msg">Restore complete!</string>
+	<string name="restore_confirm_title_msg">Do you want to restore?</string>
+	<string name="restore_confirm_msg">Notice!:\nIf you restore the backup data, the data in the current application is written all over.</string>
+	<string name="during_create_log_msg">Please wait...</string>
+
+	<string name="backup_restore_restore_msg">Restore the data from SD card</string>
+	<string name="backup_restore_restore_notice_msg">Notice:\nIf you restore the backup data, the data in the current application is written all over.</string>
+	<string name="do_restore_button_text">Restore the data!</string>
+
+	<string name="backup_restore_backup_delete_msg">【Delete selected backup-data】</string>
+	<string name="do_backup_delete_button_text">Delete</string>
+	<string name="backup_restore_all_backup_delete_msg">【Delete All backup-data】</string>
+	<string name="do_all_backup_delete_button_text">Delete All</string>
+	<string name="backup_data_is_nothing_msg">Backup data is empty</string>
+	
+	<string name="export_import_title">Export / Import</string>
+	<string name="export_title">Export</string>
+	<string name="import_title">Import</string>
+	<string name="export_import_select_action_title_msg">【Export / Import】</string>
+	<string name="import_select_button_text">Import is here</string>
+	<string name="export_select_button_text">Export is here</string>
+			
+		
+	<string name="how_to_export_text">How to Export</string>
+	<string name="export_to_mail_attached">Email(Attachments)</string>
+	<string name="export_to_mail_attached_notice"># If not well attached to your mail application, please try the official Gmail apps.</string>	
+	<string name="export_to_mail_message_body">Email(Message Body)</string>	
+	<string name="export_to_mail_message_body_notice"># If cannot paste data in the body of the email, please try the official Gmail apps.</string>	
+	<string name="export_to_sd_card">Save to SD card</string>
+	<string name="export_to_sd_card_notice"># Export destination is /moneyCalc/export/</string>
+	<string name="do_export_button_text">Export!</string>
+	<string name="export_period">Period for the export</string>
+	<string name="export_to_sd_card_no_sdcard_error_msg">Please mount the SD Card.</string>
+	<string name="export_to_mail_no_sdcard_error_msg">Please mount the SD Card.(The SD Card is used temporary preservation of the export data.)</string>
+	<string name="export_error_msg">An error occurred during export.</string>
+	<string name="export_complete_msg">Export complete!</string>
+	<string name="export_destination_msg">Export File : </string>
+	<string name="export_data_nothing">No data in the specified period. </string>
+	<string name="during_export_msg">Please wait...</string>
+	<string name="export_mail_subject">MoneyCalc ExportData</string>
+
+	<string name="export_period_this_month">This Month</string>
+	<string name="export_period_last_month">Last Month</string>
+	<string name="export_period_past_three_month">Past Three Month</string>
+	<string name="export_period_past_half_year">Past Half Year</string>
+	<string name="export_period_this_year">This Year</string>
+	<string name="export_period_last_year">Last Year</string>
+	<string name="export_period_specified">Specified Period</string>
+	
+	<string name="export_period_start_text">Start</string>
+	<string name="export_period_end_text">End</string>
+
+	<string name="category_column_name_category_name">categoryName</string>
+	<string name="category_column_name_position">displayOrder</string>
+	<string name="category_column_name_incomeFlg">incomeFlg</string>
+	
+	<string name="budget_column_name_category_name">categoryName</string>
+	<string name="budget_column_name_yearmonth">year_month</string>
+	<string name="budget_column_name_budget_price">budgetPrice</string>
+
+	<string name="filter_column_name_filter_name">filterName</string>
+	<string name="filter_column_name_category_id_list">categoryIdList</string>
+	<string name="filter_column_name_is_default">defaultFlg</string>
+
+	<string name="kakeibo_data_column_name_price">price</string>
+	<string name="kakeibo_data_column_name_category_name">categoryName</string>
+	<string name="kakeibo_data_column_name_registerDate">purchaseDate</string>
+	<string name="kakeibo_data_column_name_memo">memo</string>
+	<string name="kakeibo_data_column_name_importVersion">importVersion</string>
+	<string name="kakeibo_data_column_name_place">place</string>
+	<string name="kakeibo_data_column_name_latitude">latitude</string>
+	<string name="kakeibo_data_column_name_longitude">longitude</string>
+
+	<string name="send_log_title">Report Bugs To Developer</string>
+	<string name="send_log_notice_main_msg">If you encounter problems in the application,\nplease report Bugs(problems) to the developers.\nIf pressing the button below, the application log also sends together.\nBug fixes from the log.</string>
+	<string name="send_log_notice_sub_msg">#The log contains all the data in the application.</string>
+	<string name="send_log_button_text">Report Bugs</string>
+	<string name="send_log_subject">BugReports</string>
+	<string name="send_log_content">Your Name:\n\n\nProblem Details:\n\n\n</string>
+	<string name="mailer_chooser">Choose Email Client</string>
+
+	<string name="pref_title_balance_calculation_method">balance calc method</string>
+	<string name="pref_dialog_title_balance_calculation_method">Choose balance calculation method</string>
+	
+	<string name="balance_calculation_method_none">No display balance</string>
+	<string name="balance_calculation_method_income_minus_expense">balance = income - expense</string>
+	<string name="balance_calculation_method_budget_minus_expense">balance = budget - expense</string>
+	<string name="balance_calculation_method_budget_plus_income_minus_expense">balance = budget + income - expense</string>
+	<string name="balance_calculation_method_income_plus_carryover_minus_expense">balance = income + carryover\n　　　　　　　　　　　　 - expense</string>
+	<string name="balance_calculation_method_budget_plus_carryover_minus_expense">balance = budget + carryover\n　　　　　　　　　　　　 - expense</string>
+	<string name="balance_calculation_method_budget_plus_income_plus_carryover_minus_expense">balance = budget + income\n　　　　　　　 + carryover - expense</string>
+	
+	<string name="app_info_appli_name">【Application Name】</string>
+	<string name="app_info_appli_version">【Version】</string>
+	<string name="app_info_appli_site">【Site】</string>
+	<string name="app_info_appli_site_history">【Update history】</string>
+	<string name="app_info_appli_author">【Developer】</string>
+	<string name="app_info_appli_email">【E-Mail】</string>
+</resources>

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+	android:layout_width="fill_parent"
+	android:layout_height="wrap_content"
+	android:orientation="vertical"
+	xmlns:android="http://schemas.android.com/apk/res/android"
+>
+	<LinearLayout
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:orientation="horizontal"
+	>
+		<TextView
+			android:id="@+id/manage_budget_row_name"
+			android:layout_width="wrap_content"
+			android:layout_height="fill_parent"
+			android:textSize="16sp"
+			android:layout_marginLeft="5dip"
+			android:gravity="center_vertical"
+		>
+		</TextView>
+		<TextView
+			android:id="@+id/budget_price"
+			android:layout_width="wrap_content"
+			android:layout_height="fill_parent"
+			android:gravity="right|center_vertical"
+			android:textSize="16sp"
+			android:layout_weight="1"
+		>
+		</TextView>
+		<!-- 全体予算設定ボタン  -->
+		<ImageButton
+			android:id="@+id/setting_budget"
+			android:layout_width="45dip"
+			android:layout_height="wrap_content"
+			android:background="@drawable/setting_button_stateful"
+			android:layout_marginLeft="5dip"
+			android:layout_marginTop="5dip"
+			android:layout_marginBottom="2sp"
+			android:layout_marginRight="5dip"
+		></ImageButton>
+	</LinearLayout>
+	<LinearLayout
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:orientation="horizontal"
+		android:layout_marginLeft="5dip"
+		android:layout_marginRight="5sp"
+		android:layout_marginBottom="2sp"
+
+	>
+		<TextView
+			android:text="@string/manage_budget_header_category_total_budget"
+			android:layout_width="160dip"
+			android:layout_height="wrap_content"
+			android:textSize="14sp"
+		>
+		</TextView>
+		<TextView
+			android:id="@+id/kakeibo_total_budget_price"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:gravity="right"
+			android:textSize="14sp"
+			android:layout_weight="1"
+		>
+		</TextView>
+		<TextView
+			android:text=" "
+			android:layout_width="45dip"
+			android:layout_height="wrap_content"
+			android:layout_marginLeft="5dip"
+		>
+		</TextView>
+	</LinearLayout>
+</LinearLayout>

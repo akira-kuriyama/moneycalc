@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	android:orientation="vertical"
+>
+
+	<LinearLayout
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:orientation="vertical"
+		android:layout_marginBottom="75dip"
+	>
+		<!-- 「カテゴリの編集タイトル」 -->
+		<TextView
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:text="@string/manage_filter_title"
+			android:drawableLeft="@drawable/pin"
+			style="@style/ScreenTitle"
+		>
+		</TextView>
+		<include
+			layout="@layout/title_bottom_divider" />
+
+		<!--	追加ボタン -->
+		<Button
+			android:text="@string/ADD_FILTER"
+			android:id="@+id/add_filter"
+			android:layout_width="wrap_content"
+			android:layout_height="47sp"
+			android:drawableLeft="@drawable/add"
+			android:layout_gravity="right"
+			android:gravity="center"
+			android:layout_marginTop="5sp"
+			android:layout_marginBottom="5sp"
+		></Button>
+
+		<!--カテゴリレコード一覧 -->
+		<ImageView
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:src="@android:drawable/divider_horizontal_bright"
+			android:scaleType="fitXY"
+			android:gravity="fill_horizontal"
+		></ImageView>
+		<ListView
+			android:id="@+id/filter_name_list"
+			android:layout_width="fill_parent"
+			android:choiceMode="singleChoice"
+			android:layout_height="wrap_content"
+			android:clickable="true"
+		></ListView>
+		<ImageView
+			android:id="@+id/filter_name_list_bottom_divider"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:src="@android:drawable/divider_horizontal_bright"
+			android:scaleType="fitXY"
+			android:gravity="fill_horizontal"
+		></ImageView>
+	</LinearLayout>
+
+</FrameLayout>

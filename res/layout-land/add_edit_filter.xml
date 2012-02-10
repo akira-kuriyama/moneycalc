@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	android:orientation="vertical"
+>
+
+	<LinearLayout
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:orientation="vertical"
+		android:layout_marginBottom="60dip"
+	>
+		<!-- 「フィルターの登録編集タイトル」 -->
+		<TextView
+			android:id="@+id/title"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:drawableLeft="@drawable/pin"
+			style="@style/ScreenTitle"
+		>
+		</TextView>
+		<include
+			layout="@layout/title_bottom_divider" />
+
+		<LinearLayout
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:orientation="horizontal"
+			android:paddingTop="5dip"
+			android:paddingRight="5dip"
+			android:paddingLeft="5dip"
+		>
+			<LinearLayout
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:orientation="vertical"
+					android:layout_weight="1"
+			>
+				<TextView
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:text="@string/filter_name_label"
+					android:gravity="left"
+				>
+				</TextView>
+				<!-- フィルター名テキストボックス -->
+				<EditText
+					android:id="@+id/filter_name_text_box"
+					android:layout_width="fill_parent"
+					android:layout_height="wrap_content"
+					android:gravity="right"
+					android:layout_marginLeft="5sp"
+					android:inputType="text"
+				></EditText>
+			</LinearLayout>
+			<LinearLayout
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:orientation="vertical"
+			>
+				<TextView
+					android:id="@+id/is_default_check_box_label"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:text="@string/set_default_filter_msg"
+					android:gravity="right"
+				>
+				</TextView>
+				<!-- デフォルトフィルターにするチェックボックス -->
+				<CheckBox
+					android:id="@+id/is_default_check_box"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_gravity="right"
+					android:layout_marginLeft="8sp"
+					android:layout_marginRight="3sp"
+				></CheckBox>
+			</LinearLayout>
+		</LinearLayout>
+
+		<TextView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="@string/filter_name_select_msg"
+			android:textSize="6pt"
+			android:gravity="left|center_vertical"
+			android:drawableLeft="@drawable/accept"
+		>
+		</TextView>
+		<!--カテゴリレコード一覧 -->
+		<ImageView
+			android:layout_width="fill_parent"
+			android:layout_height="1sp"
+			android:src="@android:drawable/divider_horizontal_bright"
+			android:scaleType="fitXY"
+			android:gravity="fill_horizontal"
+		></ImageView>
+		<ListView
+			android:id="@+id/filter_name_list"
+			android:layout_width="fill_parent"
+			android:choiceMode="singleChoice"
+			android:layout_height="wrap_content"
+			android:clickable="true"
+		></ListView>
+
+	</LinearLayout>
+	<LinearLayout
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:orientation="horizontal"
+		android:layout_marginTop="5dip"
+		android:paddingTop="5dip"
+		android:paddingRight="5dip"
+		android:paddingLeft="5dip"
+		android:layout_gravity="bottom"
+	>
+		<!--	OKボタン -->
+		<Button
+			android:id="@+id/ok_button"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:gravity="center"
+			android:layout_margin="5sp"
+			android:layout_weight="1"
+		></Button>
+		<!--	Cancelボタン -->
+		<Button
+			android:text="@string/CANCEL"
+			android:id="@+id/cancel_button"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:gravity="center"
+			android:layout_margin="5sp"
+			android:layout_weight="1"
+		></Button>
+	</LinearLayout>
+
+</FrameLayout>
